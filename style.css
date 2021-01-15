@@ -1,0 +1,105 @@
+*{
+  margin:0;
+  padding:0;
+  background-origin: padding-box;
+  font-family: "Poppins",sans-serif;
+}
+html{
+  font-size: 16px;
+  background-color: #636363;
+}
+
+.calculator{
+  top: 50%;
+  left:50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+
+}
+.calc-container{
+  position: relative;
+  width:300px; 
+  height:auto;
+  background-color: yellow;
+  border-radius: 10px 10px 30px 30px;
+}
+.output{
+  width:100%
+}
+.operation{
+  width:300px;
+  height:70px;
+  font-size:1.9em;
+  overflow:hidden;
+  font-weight: bold;
+  
+  color:red
+}
+.operation.value{
+  position: relative;
+  bottom: 5px;
+  right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  
+}
+
+.result{
+  width: 300px;
+  height: 140px;
+
+  color: rgb(48, 2, 6);
+
+  font-size: 2.7em;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.input{
+  background-color: red;
+  border-radius: 0 0 25px 25px;
+  border:1px solid #1d1d1d;
+  height:340px;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.row button{
+  color:red;
+  width:50px;
+  height:50px;
+  font-size: 1.5em;
+  border:none;
+  background-color: yellow;
+  margin:8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.row button:hover{
+  font-weight: bold;
+}
+.row #calculate{
+  color:yellow;
+  background-color: black;
+  width: 150px;
+  border-radius: 50px;
+  
+  
+}
+.row #delete{
+  color:yellow;
+  border-radius:100px;
+  width:50px;
+  background-color:black;
+}
+#division, #addition ,#subtraction ,#multiplication,#clear,#percent,#comma,#o{
+  color: yellow;
+  background-color:black;
+  border-radius:100px;
+  width:50px
+  
+}
